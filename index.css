@@ -3,18 +3,17 @@
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #444;
-    text-align: center;
     line-height: 1.5;
   }
   
   nav,
   footer {
     padding: 1% 0;
-    background-color: #aaa;
+    font-family: 'Roboto', sans-serif;
+    color: #F6554D;
   }
   
   nav {
@@ -23,21 +22,31 @@
     left: 0;
     right: 0;
     z-index: 10;
+    text-align: left;
+    padding: 1% 1%;
+  
   }
   
   
   
   header {
-    padding: 12% 0;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 12% 0%;
+    background-color: #132F63;
+    color: #F7F1EA;
+    text-align: center;
+  
   }
   
   section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: #bbb;
+    background-color:  #F7F1EA;
+    text-align: center;
+  
   }
   
   section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #F7F1EA;
   }
   
