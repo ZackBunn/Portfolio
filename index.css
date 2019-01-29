@@ -1,52 +1,145 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #444;
+  line-height: 1.1;
+}
+
+.links {
+    float: right;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #444;
-    line-height: 1.5;
+    color: #838994;
+    font-size: 18px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 9990;
+}
+
+.navbar > .content {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 30px;
+  color: white;
+}
+.links a:hover {
+  color: #F7F1EA;
+}
+nav,
+footer {
+  font-family: 'Roboto', sans-serif;
+  color: #F6554D;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: left;
+  padding: 1% 1%;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 50%;
+}
+header {
+  font-family: 'Archivo Black', sans-serif;
+  padding: 4% 0%;
+  background-color: #132F63;
+  color: #F6554D;
+  text-align: center;
+  font-size: 36px;
+}
+h3{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 10%;
+}
+section {
+  min-height: 100px;
+  padding: 1% 0;
+  background-color:  #F7F1EA;
+  text-align: center;
+
+}
+.portfolio {
+  font-size: 26px;
+  background-color:  #F7F1EA;
+  text-align: center;
+}
+section:nth-child(even) {
+  background-color: #F7F1EA;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
+  margin: 0 25%;
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  list-style: none;
+}
+
+
+.social-links:hover {
+  color: #132F63;
+}
+
+.social li a{
+  color: #F6554D;
+  text-align: center;
+}
+
+ul, menu, dir {
+  padding: 0;
+}
+
+@media only screen and (max-width: 764px) {
+  
+  .links li {
+  margin: 0 5px;
   }
-  
-  nav,
-  footer {
-    padding: 1% 0;
-    font-family: 'Roboto', sans-serif;
-    color: #F6554D;
+  .image {
+    display: block;
+    margin-bottom: 10px;
   }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    text-align: left;
-    padding: 1% 1%;
-  
-  }
-  
-  
-  
-  header {
-    font-family: 'Archivo Black', sans-serif;
-    padding: 12% 0%;
-    background-color: #132F63;
-    color: #F7F1EA;
-    text-align: center;
-  
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color:  #F7F1EA;
-    text-align: center;
-  
-  }
-  
-  section:nth-child(even) {
-    background-color: #F7F1EA;
-  }
-  
+  img {
+    margin: 0 auto;
+    width: 384px;
+    }
+
+  ul.links {
+    padding: 0;
+    }
+}
+

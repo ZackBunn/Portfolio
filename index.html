@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <meta name="Portfolio" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto" rel="stylesheet">
 
 </head>
 <body>
-    <nav role="navigation">Menu</nav>
+    <nav role="navigation" class="navbar">
+      <div class="container">
+          <ul class="links">
+            <li><a class="jumpTo" href="#bio">Bio</a></li>
+            <li><a class="jumpTo" href="#portfolio">Portfolio</a></li>
+            <li><a class="jumpTo" href="#social">Social Media</a></li>
+          </ul>
+        </div>
+    </nav>
     <main role="main">
         <header role="banner">
             <h1>Zack Bunn</h1>
-            <h3>Bio</h3>
         </header>
-
-        <section>
-            Projects
+        <section class="bio" role="bio" id="bio">
+           <h3>Hello, I'm Zack. I designed this website to show you other websites that I designed. I'm also interested in exercising, video games, trivia nights, and volunteering at museums. If any of these projects are of interest, I hope you'll give me the opportunity to design something for you soon.</h3>
         </section>
-
+        <section id="portfolio" class="portfolio">
+          <h4>Portfolio</h4>
+        </section>
         <section>
-            Project 1
+          <a href="https://github.com/RougeBunn/QuizApp"><img src="img/QuizApp.PNG" alt="quiz"/></a>
+            <h4>Nintendo QuizApp</h4>
+            <p>How much do you think you know about Nintendo. Try this 10 question quiz to see if you'll make Mario proud.</p>
         </section>
 
     
     </main>
-    <footer role="content-info">Social Tags</footer>
-</body>
+    <footer role="content-info">
+       <ul class="social" id="social">
+          <li><a class="social-links" href="https://github.com/RougeBunn" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+          <li><a class="social-links" href="https://www.linkedin.com/in/zachary-bunn-7b695767" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+          <li><a class="social-links" href="mailto:zrb6578@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>	
+    </body>
 </html>
